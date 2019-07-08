@@ -3,8 +3,8 @@ FROM ruby:2.3-slim
 RUN apt-get update && apt-get install -y curl
 
 ARG KUBECTL_VERSION="1.12.7"
-ARG KUBECTL_BUILD_DATE="2019-03-27"
-ARG HELM_VERSION="2.11.0"
+ARG KUBECTL_BUILD_DATE="2019-07-08"
+ARG HELM_VERSION="2.14.1"
 
 RUN curl -L https://amazon-eks.s3-us-west-2.amazonaws.com/${KUBECTL_VERSION}/${KUBECTL_BUILD_DATE}/bin/linux/amd64/kubectl > /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl

@@ -4,3 +4,5 @@ kubeconfigdata
 env
 test-env
 k8s-env
+
+.history
