@@ -2,8 +2,8 @@ FROM ruby:2.3-slim
 
 RUN apt-get update && apt-get install -y curl git ssh
 
-ARG KUBECTL_VERSION="1.12.7"
-ARG KUBECTL_BUILD_DATE="2019-07-08"
+ARG KUBECTL_VERSION="1.12.9"
+ARG KUBECTL_BUILD_DATE="2019-06-21"
 ARG HELM_VERSION="2.14.1"
 
 RUN curl -L https://amazon-eks.s3-us-west-2.amazonaws.com/${KUBECTL_VERSION}/${KUBECTL_BUILD_DATE}/bin/linux/amd64/kubectl > /usr/local/bin/kubectl \
