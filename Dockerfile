@@ -1,6 +1,6 @@
 FROM ruby:2.3-slim
 
-RUN apt-get update && apt-get install -y curl git ssh
+RUN apt-get update && apt-get install -y curl git ssh jq
 
 ARG KUBECTL_VERSION="1.12.9"
 ARG KUBECTL_BUILD_DATE="2019-06-21"
